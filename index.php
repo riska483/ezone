@@ -269,8 +269,8 @@ session_start();
                                     <div class="slider-progress"></div>
                                     <div class="slider-content">
                                         <h5>Promo Mingguan <span>-20% Diskon</span> untuk Smartphone</h5>
-                                        <h2>Samsung Galaxy S23 Ultra</h2>
-                                        <h3>Mulai dari <span>Rp15.000.000</span></h3>
+                                        <h2>Samsung Galaxy</h2>
+                                        <h3>Mulai dari <span>Rp2.000.000</span></h3>
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="belanja.php">Belanja Sekarang</a>
                                         </div>
@@ -280,9 +280,9 @@ session_start();
                                 <div class="single-slide align-center-left animation-style-02 bg-2">
                                     <div class="slider-progress"></div>
                                     <div class="slider-content">
-                                        <h5>Promo Spesial <span>Tablet & Laptop</span></h5>
-                                        <h2>Apple iPad Pro & MacBook Air</h2>
-                                        <h3>Harga mulai <span>Rp12.000.000</span></h3>
+                                        <h5>Promo Spesial <span></span></h5>
+                                        <h2>Galaxy Tab</h2>
+                                        <h3>Harga mulai <span>Rp6.000.000</span></h3>
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="belanja.php">Belanja Sekarang</a>
                                         </div>
@@ -292,9 +292,9 @@ session_start();
                                 <div class="single-slide align-center-left animation-style-01 bg-3">
                                     <div class="slider-progress"></div>
                                     <div class="slider-content">
-                                        <h5>Diskon Eksklusif <span>-15% Off</span></h5>
-                                        <h2>Laptop Gaming ASUS ROG</h2>
-                                        <h3>Mulai dari <span>Rp18.499.000</span></h3>
+                                    
+                                        <h2>Laptop HP</h2>
+                                        <h3>Mulai dari <span>Rp5.000.000</span></h3>
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="belanja.php">Belanja Sekarang</a>
                                         </div>
@@ -349,7 +349,7 @@ session_start();
                         <div class="row">
                             <div class="product-active owl-carousel">
                                 <?php
-                                include "admin/koneksi.php"; // Pastikan file koneksi sudah sesuai
+                                include "admin/koneksi.php";
 
                                 $query = mysqli_query($koneksi, "
     SELECT p.*, k.nm_kategori 
@@ -414,10 +414,10 @@ session_start();
                         <div class="li-static-home-content">
                             <p>Promo Mingguan <span>-20% Diskon</span> Produk Pilihan</p>
                             <h2>Produk Unggulan</h2>
-                            <h2>Smartphone & Aksesori Technozone</h2>
+                            <h2>Barang elektronik E-Zone</h2>
                             <p class="schedule">
                                 Mulai dari
-                                <span> Rp1.500.000</span>
+                                <span> 300 ribuan</span>
                             </p>
                             <div class="default-btn">
                                 <a href="belanja.php" class="links">Belanja Sekarang</a>
