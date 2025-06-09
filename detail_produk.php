@@ -324,7 +324,7 @@ session_start();
                                 <div class="single-add-to-cart">
                                     <form action="tambah_ke_keranjang.php" method="POST" class="cart-quantity">
                                         <input type="hidden" name="id_produk" value="<?= $data['id_produk'] ?>">
-                                        <input type="hidden" name="id_user" value="<?= $_SESSION['id_user'] ?>">
+                                        <input type="hidden" name="id_user" value="<?= isset($_SESSION['id_user']) ? $_SESSION['id_user'] : '' ?>">
                                         <input type="hidden" name="harga" value="<?= $data['harga'] ?>">
                                         <input type="hidden" name="redirect_url" value="<?= $_SERVER['REQUEST_URI'] ?>">
                                         <div class="quantity">

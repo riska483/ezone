@@ -206,7 +206,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
             ?>
 
             <!-- Orders Card -->
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xxl-5 col-md-6">
               <div class="card info-card sales-card">
 
                 <div class="card-body">
@@ -240,7 +240,7 @@ if (!isset($_SESSION['status']) || $_SESSION['status'] !== 'admin') {
             ?>
 
             <!-- Revenue Card -->
-            <div class="col-xxl-4 col-md-6">
+            <div class="col-xxl-5 col-md-6">
               <div class="card info-card revenue-card">
 
                 <div class="card-body">
