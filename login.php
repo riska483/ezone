@@ -4,27 +4,27 @@ session_start();
 require "admin/koneksi.php";
 
 if (isset($_POST["login"])) {
-  $username = $_POST["username"];
-  $password = $_POST["password"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-  $result = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username='$username'");
+    $result = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username='$username'");
 
-  // cek username
-  if (mysqli_num_rows($result) === 1) {
-    // cek password
-    $row = mysqli_fetch_assoc($result);
-    if (password_verify($password, $row["password"])) {
-      // set session
-      $_SESSION["login"] = true;
-      $_SESSION["username"] = $row["username"];
-      $_SESSION["id_user"] = $row["id_user"];
-      header("refresh:0, index.php");
+    // cek username
+    if (mysqli_num_rows($result) === 1) {
+        // cek password
+        $row = mysqli_fetch_assoc($result);
+        if (password_verify($password, $row["password"])) {
+            // set session
+            $_SESSION["login"] = true;
+            $_SESSION["username"] = $row["username"];
+            $_SESSION["id_user"] = $row["id_user"];
+            header("refresh:0, index.php");
+        } else {
+            echo "<script>alert('Username atau password yang anda masukkan salah')</script>";
+        }
     } else {
-      echo "<script>alert('Username atau password yang anda masukkan salah')</script>";
+        echo "<script>alert('Username atau password yang anda masukkan salah')</script>";
     }
-  } else {
-    echo "<script>alert('Username atau password yang anda masukkan salah')</script>";
-  }
 }
 ?>
 
@@ -102,61 +102,7 @@ if (isset($_POST["login"])) {
                             <!-- Begin Header Middle Right Area -->
                             <div class="header-middle-right">
                                 <ul class="hm-menu">
-                                    <!-- Begin Header Middle Wishlist Area -->
-                                    <li class="hm-wishlist">
-                                        <a href="login.html">
-                                            <i class="fa fa-user"></i>
-                                        </a>
-                                    </li>
-                                    <!-- Header Middle Wishlist Area End Here -->
-                                    <!-- Begin Header Mini Cart Area -->
-                                    <li class="hm-minicart">
-                                        <div class="hm-minicart-trigger">
-                                            <span class="item-icon"></span>
-                                            <span class="item-text">£80.00
-                                                <span class="cart-item-count">2</span>
-                                            </span>
-                                        </div>
-                                        <span></span>
-                                        <div class="minicart">
-                                            <ul class="minicart-product-list">
-                                                <li>
-                                                    <a href="single-product.html" class="minicart-product-image">
-                                                        <img src="images/product/small-size/5.jpg" alt="cart products">
-                                                    </a>
-                                                    <div class="minicart-product-details">
-                                                        <h6><a href="single-product.html">Aenean eu tristique</a></h6>
-                                                        <span>£40 x 1</span>
-                                                    </div>
-                                                    <button class="close" title="Remove">
-                                                        <i class="fa fa-close"></i>
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product.html" class="minicart-product-image">
-                                                        <img src="images/product/small-size/6.jpg" alt="cart products">
-                                                    </a>
-                                                    <div class="minicart-product-details">
-                                                        <h6><a href="single-product.html">Aenean eu tristique</a></h6>
-                                                        <span>£40 x 1</span>
-                                                    </div>
-                                                    <button class="close" title="Remove">
-                                                        <i class="fa fa-close"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <p class="minicart-total">SUBTOTAL: <span>£80.00</span></p>
-                                            <div class="minicart-button">
-                                                <a href="shopping-cart.html" class="li-button li-button-fullwidth li-button-dark">
-                                                    <span>View Full Cart</span>
-                                                </a>
-                                                <a href="checkout.html" class="li-button li-button-fullwidth">
-                                                    <span>Checkout</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- Header Mini Cart Area End Here -->
+                                   
                                 </ul>
                             </div>
                             <!-- Header Middle Right Area End Here -->
@@ -330,7 +276,7 @@ if (isset($_POST["login"])) {
                                 <div class="footer-logo">
                                     <h1>E-Zone</h1>
                                     <p class="info">
-                                    E-Zone adalah toko online yang menyediakan berbagai produk elektronik berkualitas seperti TV, kipas angin dan barang elektronik lainnya dengan harga terbaik dan kualitas yang terbaik juga.
+                                        E-Zone adalah toko online yang menyediakan berbagai produk elektronik berkualitas seperti TV, kipas angin dan barang elektronik lainnya dengan harga terbaik dan kualitas yang terbaik juga.
                                     </p>
                                 </div>
                                 <ul class="des">
@@ -365,23 +311,8 @@ if (isset($_POST["login"])) {
                                 <div class="footer-block">
                                     <h3 class="footer-block-title">Ikuti Kami</h3>
                                     <ul class="social-link">
-                                        <li class="twitter">
-                                            <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="facebook">
-                                            <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="youtube">
-                                            <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube">
-                                                <i class="fa fa-youtube"></i>
-                                            </a>
-                                        </li>
                                         <li class="instagram">
-                                            <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank" title="Instagram">
+                                            <a href="https://www.instagram.com/rskaaadr" data-toggle="tooltip" target="_blank" title="Instagram">
                                                 <i class="fa fa-instagram"></i>
                                             </a>
                                         </li>
@@ -410,7 +341,7 @@ if (isset($_POST["login"])) {
                             <!-- Footer Payment Area End Here -->
                             <!-- Begin Copyright Area -->
                             <div class="copyright text-center pt-25">
-                            <span><a target="_blank" href="https://www.instagram.com/rskaaadr">Designed by: Riska Andriani</a></span>
+                                <span><a target="_blank" href="https://www.instagram.com/rskaaadr">Designed by: Riska Andriani</a></span>
                             </div>
                             <!-- Copyright Area End Here -->
                         </div>

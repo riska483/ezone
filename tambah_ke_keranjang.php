@@ -2,6 +2,14 @@
 session_start();
 include 'admin/koneksi.php';
 
+if (!isset($_SESSION['username']) || !isset($_SESSION['id_user'])) {
+    echo "<script>
+        alert('Silakan login terlebih dahulu.');
+        window.location = 'login.php';
+    </script>";
+    exit;
+    }
+
 $id_produk = $_POST['id_produk'];
 $id_user   = $_POST['id_user'];
 $jumlah    = (int) $_POST['jumlah'];

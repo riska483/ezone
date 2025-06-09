@@ -89,61 +89,6 @@ $data = mysqli_fetch_array($sql);
                             <!-- Begin Header Middle Right Area -->
                             <div class="header-middle-right">
                                 <ul class="hm-menu">
-                                    <!-- Begin Header Middle Wishlist Area -->
-                                    <li class="hm-wishlist">
-                                        <a href="login.php">
-                                            <i class="fa fa-user"></i>
-                                        </a>
-                                    </li>
-                                    <!-- Header Middle Wishlist Area End Here -->
-                                    <!-- Begin Header Mini Cart Area -->
-                                    <li class="hm-minicart">
-                                        <div class="hm-minicart-trigger">
-                                            <span class="item-icon"></span>
-                                            <span class="item-text">£80.00
-                                                <span class="cart-item-count">2</span>
-                                            </span>
-                                        </div>
-                                        <span></span>
-                                        <div class="minicart">
-                                            <ul class="minicart-product-list">
-                                                <li>
-                                                    <a href="single-product.html" class="minicart-product-image">
-                                                        <img src="images/product/small-size/5.jpg" alt="cart products">
-                                                    </a>
-                                                    <div class="minicart-product-details">
-                                                        <h6><a href="single-product.html">Aenean eu tristique</a></h6>
-                                                        <span>£40 x 1</span>
-                                                    </div>
-                                                    <button class="close" title="Remove">
-                                                        <i class="fa fa-close"></i>
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <a href="single-product.html" class="minicart-product-image">
-                                                        <img src="images/product/small-size/6.jpg" alt="cart products">
-                                                    </a>
-                                                    <div class="minicart-product-details">
-                                                        <h6><a href="single-product.html">Aenean eu tristique</a></h6>
-                                                        <span>£40 x 1</span>
-                                                    </div>
-                                                    <button class="close" title="Remove">
-                                                        <i class="fa fa-close"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                            <p class="minicart-total">SUBTOTAL: <span>£80.00</span></p>
-                                            <div class="minicart-button">
-                                                <a href="shopping-cart.html" class="li-button li-button-fullwidth li-button-dark">
-                                                    <span>View Full Cart</span>
-                                                </a>
-                                                <a href="checkout.html" class="li-button li-button-fullwidth">
-                                                    <span>Checkout</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- Header Mini Cart Area End Here -->
                                 </ul>
                             </div>
                             <!-- Header Middle Right Area End Here -->
@@ -207,7 +152,7 @@ $data = mysqli_fetch_array($sql);
                         <div class="banner-wrapper text-center">
                             <img src="images/bg-banner/4.webp" alt="Banner Toko Elektronik" class="img-fluid" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 100%;">
                             <p class="mt-3" style="font-size: 16px; color: #555;">
-                            Temukan produk TV, Kipas Angin, dan produk elektronik berkualitas lainnya hanya di E-Zone!<br>
+                                Temukan produk TV, Kipas Angin, dan produk elektronik berkualitas lainnya hanya di E-Zone!<br>
                                 <a href="login.php" style="color: #007bff; text-decoration: underline;">Sudah punya akun? Login di sini.</a>
                             </p>
                         </div>
@@ -312,7 +257,7 @@ $data = mysqli_fetch_array($sql);
                                 <div class="footer-logo">
                                     <h1>E-Zone</h1>
                                     <p class="info">
-                                    E-Zone adalah toko online yang menyediakan berbagai produk elektronik berkualitas seperti TV, kipas angin dan barang elektronik lainnya dengan harga terbaik dan kualitas yang terbaik juga.
+                                        E-Zone adalah toko online yang menyediakan berbagai produk elektronik berkualitas seperti TV, kipas angin dan barang elektronik lainnya dengan harga terbaik dan kualitas yang terbaik juga.
                                     </p>
                                 </div>
                                 <ul class="des">
@@ -347,23 +292,8 @@ $data = mysqli_fetch_array($sql);
                                 <div class="footer-block">
                                     <h3 class="footer-block-title">Ikuti Kami</h3>
                                     <ul class="social-link">
-                                        <li class="twitter">
-                                            <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li class="facebook">
-                                            <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="youtube">
-                                            <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube">
-                                                <i class="fa fa-youtube"></i>
-                                            </a>
-                                        </li>
                                         <li class="instagram">
-                                            <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank" title="Instagram">
+                                            <a href="https://www.instagram.com/rskaaadr" data-toggle="tooltip" target="_blank" title="Instagram">
                                                 <i class="fa fa-instagram"></i>
                                             </a>
                                         </li>
